@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --black: black;
+    --white: #CCCCCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    mix-blend-mode: difference;
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a {
+    background: none;
+    font-size: 18px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 1vw 1.5vw;
+    transition: color .1s linear;
+    position: relative;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    font-size: 100px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+section:nth-child(odd) {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.chessterity{
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.phome{
+    font-weight: 500;
+    font-size: 20px;
+}
