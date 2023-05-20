@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
+::-webkit-scrollbar{
+    width: 0em;
+}
+
+body::-webkit-scrollbar {
+
+    width: 1.5em;
+
+}
+
+body::-webkit-scrollbar-track {
+    height: 100vh;
+}
+
+body::-webkit-scrollbar-thumb{
+    width: 5em;
+    height: 10px;
+    max-height: 10px;
+    min-height: 10px;
+}
+
 :root{
     --black: black;
     --white: #CCCCCC;
@@ -15,6 +36,10 @@
 html{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+}
+
+body{
+    overflow: overlay;
 }
 
 header {
@@ -72,12 +97,32 @@ section:nth-child(odd) {
     color: var(--black);
 }
 
-.chessterity{
+.chessterity {
     font-weight: 700;
     font-size: 70px;
 }
 
-.phome{
+.phome {
     font-weight: 500;
     font-size: 20px;
+}
+
+#about {
+    display: flex;
+}
+
+.scrollbar {
+    position: fixed;
+    left: auto;
+    right: 0;
+    height: 100vh;
+    width: 1.5em;
+    background-color: none;
+    display: grid;
+    mix-blend-mode: difference;
+}
+.thumb{
+    background-color: var(--white);
+    width: auto;
+    height: 20vh;
 }
