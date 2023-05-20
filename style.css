@@ -86,15 +86,15 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--black);
+    background-color: var(--white);
     font-size: 100px;
-    color: var(--white);
+    color: var(--black);
     font-weight: 700;
 }
 
 section:nth-child(odd) {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .chessterity {
